@@ -1,12 +1,14 @@
-@media  screen and (max-width: 799px) {
+@media  screen and (min-width: 300px) and (max-width: 799px) {
     body {
         margin: 0;
+        /* width: 100vw; */
     }
 
     #header {
         padding: 10px 20px;
         position: sticky;
         top: 0;
+        width: 100%;
 
         i {
             font-size: 40px;
@@ -67,12 +69,11 @@
         #about_section {
             .about {
                 flex-direction: column;
-                padding: 0 30px;
+                padding: 0 0 30px 30px ;
+                margin-right: 20px;
+                
             }
 
-            img {
-                width: 100%;
-            }
         }
 
         #experience_section {
