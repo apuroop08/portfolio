@@ -1,8 +1,7 @@
-// document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("year").textContent = new Date().getFullYear();
 
 const menu = document.querySelector(".menu");
 const mobileNav = document.querySelector(".mobile_nav");
-// const logo = document.querySelector(".logo");
 
 menu.addEventListener("click", () => {
     const isOpen = mobileNav.style.display === "flex";
