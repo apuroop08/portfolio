@@ -1,19 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Honk:MORF@15&family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: poppins, sans-serif;
 }
 
-body{
-    color: #000;
+body {
     margin: 0 100px;
-    font-family: "poppins", sans-serif;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 p {
@@ -34,105 +27,125 @@ p {
 }
 
 
-/* heading */
+/* Header */
 #header {
-    padding: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 0;
     position: sticky;
     top: 0;
     background-color: #fff;
-    z-index: 9999;
-
-    a {
-        text-decoration: none;
-        color: #000;
-        font-weight: 500;
-    }
-
+    z-index: 99999;
 }
+
+#header a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
 
 #nav ul {
     display: flex;
     gap: 40px;
     list-style-type: none;
+}
 
-    a {
-        text-decoration: none;
-        color: #000;
-        font-weight: 600;
-    }
+#nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
 
-    a:hover {
-        border-bottom: 3px solid;
-        padding-bottom: 3px;
-    }
+#nav a:hover {
+    border-bottom: 3px solid;
+    padding-bottom: 3px;
+}
+
+.menu {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+/* Mobile nav */
+.mobile_nav {
+    display: none;
+    background: #fff;
+    padding: 20px;
+}
+
+.mobile_nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.mobile_nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
 }
 
 
-/* hero */
+/* Hero */
 #hero_section {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 85vh;
-    width: 100%;
+    height: 90vh;
     gap: 80px;
-    margin: 40px 0;
+}
 
-    .hero_img {
-        padding-left: 90px;
-        img {
-            height: 60vh;
-            border-radius: 50%;
-        }
-    }
+.hero_img img {
+    height: 60vh;
+    border-radius: 50%;
+}
 
-    .hero_info {
-        display: flex;
-        flex-direction: column;
+.hero_info {
+    display: flex;
+    flex-direction: column;
+}
 
-        h2 {
-            margin-bottom: 10px;
-            font-size: 32px;
-            font-weight: 600;
-        }
+.hero_info h2 {
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 600;
+}
 
-        h4 {
-            margin-bottom: 10px;
-            font-size: 20px;
-        }
+.hero_info h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
 
-        .buttons {
-            margin-top: 10px;
-            display: flex;
-            gap: 20px;
-            margin-bottom: 10px;
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+}
 
-            a {
-                text-decoration: none;
-                color: #000;
-                padding: 10px;
-                font-weight: 600;
-            }
+.buttons a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    font-weight: 600;
+}
 
-            a:hover {
-                color: #fff;
-            }
-        }
+.buttons a:hover {
+    color: #fff;
+}
 
-        .links {
-            display: flex;
-            gap: 20px;
-            font-size: 30px;
-            cursor: pointer;
-
-            a {
-                color: #000;
-            }
-        }
-    }
+.links {
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.links a {
+    color: #000;
 }
 
 
@@ -142,47 +155,42 @@ p {
     flex-direction: column;
     align-items: center;
     margin: 40px 0;
-
-    .about {
-        display: flex;
-        margin: 40px 0;
-        gap: 20px;
-        
-        .about_info {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-
-            .info {
-                display: flex;
-                gap: 20px;
-                justify-content: center;
-                
-                .exp, .edu{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    padding: 30px;
-                    border-radius: 20px;
-                    border: 1px solid #000;
-
-                    i {
-                        font-size: 30px;
-                    }
-                }
-
-            }
-        }
-
-    }
-
-    img {
-        height: 45vh;
-        width: 35vw;
-        border-radius: 20px;
-    }
 }
+
+.about {
+    display: flex;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.about_info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.exp, .edu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid #000;
+}
+
+img {
+    height: 45vh;
+    width: 35vw;
+    border-radius: 20px;
+}
+
 
 
 /* Experience */
@@ -191,31 +199,31 @@ p {
     flex-direction: column;
     align-items: center;
     margin: 40px 0;
-    
-    .experience {
-        margin-top: 40px;
-        display: flex;
-        gap: 40px;
+}
 
-        img {
-            height: 45vh;
-            width: 35vw;
-            border-radius: 20px;
-        }
+.experience {
+    margin-top: 40px;
+    display: flex;
+    gap: 40px;
+}
 
-        .exp_info {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
+.experience img {
+    height: 45vh;
+    width: 35vw;
+    border-radius: 20px;
+}
 
-            h3 {
-                font-weight: 650;
-            }
+.exp_info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 
-            p {
-                margin-top: 10px;
-            }
-        }
+    h3 {
+        font-weight: 650;
+    }
+
+    p {
+        margin-top: 10px;
     }
 }
 
@@ -256,6 +264,7 @@ p {
     }
 
     img {
+        width: 70px;
         height: 69px;
         padding: 10px 0;
     }
@@ -273,63 +282,67 @@ p {
     flex-direction: column;
     margin: 40px 0;
     align-items: center;
+}
+#projects {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    align-items: center;
+}
 
-    #projects {
-        /* width: 100%; */
-        margin-top: 30px;
-        display: flex;
-        gap: 15px;
-        flex-wrap: wrap;
-        align-items: center;
+#projects .project {
+    width: 23%;
+    height: 50vh;
+    min-width: 250px;
+    padding: 10px 20px;
+    border: 1px solid #919191;
+    border-radius: 25px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.2s ease;
+    h2 {
+        font-weight: 500;
+    }
+}
 
-        .project {
-            width: 20vw;
-            height: 50vh;
-            border: 1px solid #000;
-            display: flex;
-            flex-direction: column;
-            padding: 20px 30px;
-            border-radius: 20px;
+.img {
+    border: 1px solid #000;
+    height: 30vh;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
 
-            h2 {
-                font-weight: 500;
-            }
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    display: block;
+}
 
-            .img {
-                border: 1px solid #000;
-                height: 30vh;
-                border-radius: 10px;
-                margin-bottom: 10px;
-                overflow: hidden;
+.pro_btn {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
 
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: fill;
-                }
-            }
+    a {
+        text-decoration: none;
+        color: #000;
+    }
 
-            .pro_btn {
-                margin-top: 10px;
-                display: flex;
-                justify-content: space-between;
-
-                a {
-                    text-decoration: none;
-                    color: #000;
-                }
-
-                a:hover {
-                    color: #fff;
-                }
-                .btn {
-                    font-size: 10px;
-                    font-weight: 600;
-                    padding: 5px 10px;
-                    height: 25px;
-                }
-            }
-        }
+    a:hover {
+        color: #fff;
+    }
+    
+    .btn {
+        font-size: 10px;
+        font-weight: 600;
+        padding: 5px 10px;
+        height: 25px;
     }
 }
 

@@ -1,141 +1,136 @@
-@media  screen and (min-width: 300px) and (max-width: 799px) {
+@media (min-width: 375px) and (max-width: 768px) {
     body {
-        margin: 0;
-        /* width: 100vw; */
+        margin: 0 20px;
+    }
+    nav {
+        display: none;
     }
 
-    #header {
-        padding: 10px 20px;
-        position: sticky;
-        top: 0;
+    .menu {
+        display: block;
+    }
+    
+    #hero_section {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        margin-top: 40px;
+        gap: 20px;
+    }
+
+    .hero_img img {
+        /* margin-left: 80px; */
+        height: 40vh;
+        width: 60vw;
+    }
+
+    .buttons {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .links {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about_section{
+        margin-top: 80px;
+        padding: 0 10px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+    
+    .about img {
         width: 100%;
+        height: 30vh;
+    }
+    
+    .info {
+        flex-direction: column;
+    }
 
-        i {
-            font-size: 40px;
-        }
+    .experience {
+        flex-direction: column;
+    }
 
-        .menu {
-            display: initial;
-            cursor: pointer;
-        }
-        
-        .mobile_nav {
-                height: 30vh;
-                padding-right: 50px;
-                justify-content: space-between;
-                z-index: 99999;
-                cursor: pointer;
+    .experience img {
+        width: 100%;
+        height: 30vh;
+    }
 
-                
-                ul{
-                    list-style: none;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 15px;
-                    justify-content: center;
-                    font-size: 18px;
-                }
-            }
+    #projects {
+        justify-content: center;
+    }
 
-        }
-        #nav {
-            width: 100%;
-            display: none;
-        }
+    #projects .project {
+        width: 90%;
+    }
 
 
-        #hero_section {
-            flex-direction: column;
-            padding-top: 190px;
-            gap: 20px;
 
-            .hero_img {
-                align-items: center;
-                padding-top: 100px;
-                padding-right: 90px;
-                img {
-                    height: 30vh;
-                }
-            }
+    .cont_links {
+        flex-direction: column;
+        padding: 20px;
+    }
 
-            .hero_info {
-                margin: 0 20px;
-                padding-bottom: 400px;
-                align-items: center;
-            }
-        }
-
-
-        #about_section {
-            .about {
-                flex-direction: column;
-                padding: 0 0 30px 30px ;
-                margin-right: 20px;
-                
-            }
-
-        }
-
-        #experience_section {
-            .experience {
-                flex-direction: column;
-                padding: 0 30px;
-
-                img {
-                    width: 100%;
-                }
-            }
-        }
-
-        #carousel {
-            margin: 0 30px;
-        }
-
-
-        #projects_section {
-            #projects {
-                /* flex-direction: column; */
-                padding: 0 30px;
-                
-                .project {
-                    width: 45%;
-                    height: 30vh;
-
-                    h2 {
-                        font-size: 14px;
-                    }
-                    .pro_btn {
-                        flex-direction: column;
-                        gap: 10px;
-                        .btn{
-                            width: 80px;
-                        }
-                    }
-                }
-            }
-        }
-
-        #contact_section {
-
-            .cont_links {
-                flex-direction: column;
-            }
-        }
-
-        footer {
-            margin: 30px 0;
-            p {
-                font-size: 12px;
-            }
-        }
 }
 
-
-
-
-
-@media  screen and (min-width: 800px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     body {
         margin: 0 50px;
     }
+
+    #hero_section {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        margin-top: 40px;
+    }
+
+    .hero_img img {
+        height: 30vh;
+        width: 40vw;
+    }
+
+    .buttons {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .links {
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #about_section{
+        margin-top: 80px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about img {
+        width: 100%;
+        height: 30vh;
+    }
+    
+    #experience_section {
+        margin-top: 100px;
+    }
+    
+    .experience {
+        flex-direction: column;
+    }
+
+    .experience img {
+        width: 100%;
+        height: 30vh;
+    }
+
+
 }
